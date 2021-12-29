@@ -12,7 +12,7 @@ const HomeScreen = () => {
         onPress={() => console.warn('Search button clicked')}>
         <Fontisto name={'search'} size={25} color={'#f15454'} />
 
-        <Text styles={styles.buttonText}>Where are you going? </Text>
+        <Text styles={styles.searchButtonText}>Where are you going? </Text>
       </Pressable>
 
       {/* image  */}
