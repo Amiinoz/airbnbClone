@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {View, TextInput, Text, FlatList} from 'react-native';
-import styles from '../../components/post/styles.js';
+// import styles from '../../components/post/styles.js';
 import searchResults from '../../../assets/data/search';
 import Entypo from 'react-native-vector-icons/Entypo';
-import './styles.js';
+import styles from './styles';
 
 const DestinationSearchScreen = () => {
   const [inputText, setInputText] = useState('');
@@ -24,7 +24,7 @@ const DestinationSearchScreen = () => {
         renderItem={({item}) => (
           <View style={styles.row}>
             <View style={styles.iconContainer}>
-              <Entypo name={'location-pin'} size={25} />
+              <Entypo name={'location-pin'} size={30} />
             </View>
             <Text style={styles.locationText}>{item.description}</Text>
           </View>
